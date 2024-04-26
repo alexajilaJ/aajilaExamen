@@ -5,8 +5,93 @@
              Title="vResumen">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="RESUMEN"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Label
+    x:Name="lblApellido"
+    TextColor="Red"
+    FontSize="14"
+    HorizontalTextAlignment="End"/>
+
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label 
+                Grid.Row="0" 
+                Grid.Column="0" 
+                Text="Nombre:" 
+                VerticalOptions="Center"/>
+            <Label 
+                Grid.Row="1" 
+                Grid.Column="0" 
+                Text="Apellido:" 
+                VerticalOptions="Center"/>
+            <Label 
+                Grid.Row="2" 
+                Grid.Column="0" 
+                Text="Edad:" 
+                VerticalOptions="Center"/>
+
+            <Label 
+             Grid.Row="3" 
+             Grid.Column="0" 
+             Text="Fecha:" 
+             VerticalOptions="Center"/>
+
+            <Label 
+             Grid.Row="4" 
+             Grid.Column="0" 
+             Text="Ciudad:" 
+             VerticalOptions="Center"/>
+
+            <Label 
+ Grid.Row="5" 
+ Grid.Column="0" 
+ Text="Pais:" 
+ VerticalOptions="Center"/>
+
+
+            <Label 
+ Grid.Row="6" 
+ Grid.Column="0" 
+ Text="Monto Inicial:" 
+ VerticalOptions="Center"/>
+
+
+            <Label 
+ Grid.Row="7" 
+ Grid.Column="0" 
+ Text="Pago Mensual:" 
+ VerticalOptions="Center"/>
+
+            <Label 
+ Grid.Row="7" 
+ Grid.Column="0" 
+ Text="Pago Total:" 
+ VerticalOptions="Center"/>
+            <Label 
+                 x:Name="txtNombre"
+                 Grid.Row="0" 
+                 Grid.Column="1" 
+
+                  VerticalOptions="Center"/>
+
+        </Grid>
     </VerticalStackLayout>
 </ContentPage>
