@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aajilaExamen.Vistas.vLogin"
+             Title="Inicio de Sesión">
+    <VerticalStackLayout 
+        Padding="30"
+        Spacing="25">
+        <Label 
+            Text="Inicio de sesión"
+            HorizontalTextAlignment="Center"
+            FontSize="20"
+            TextColor="Red"
+            HorizontalOptions="Center" />
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO- UISRAEL-768x209.png"
+                HeightRequest="50"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Usuario"
+                FontSize="20"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Grid.Row="0"
+                Grid.Column="0"/>
+
+            <Entry x:Name="txtUsuario"
+                Placeholder="ingrese su usuario"
+                Grid.Row="0"
+                Grid.Column="1"/>
+
+            <Label Text=""
+                Grid.Row="1"/>
+
+            <Label Text="Contraseña"
+                FontSize="20"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Grid.Row="2"
+                Grid.Column="0"/>
+
+            <Entry x:Name="txtContrasena"
+                Placeholder="ingrese la contraseña"
+                IsPassword="true"
+                Grid.Row="2"
+                Grid.Column="1"/>
+        </Grid>
+        <Button x:Name="btnInicio"
+            Text="iniciar sesion"
+            Clicked="btnInicio_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
