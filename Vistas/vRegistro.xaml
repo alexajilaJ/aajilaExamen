@@ -10,7 +10,6 @@
             Text="Registro"
             FontSize="Medium"
             VerticalTextAlignment="Center" />
-        <Label Text="Usuario conectado: " />
         <Label x:Name="usernameLabel" Text="{Binding Username}" FontAttributes="Bold" />
         <Grid>
             <Grid.RowDefinitions>
@@ -125,6 +124,8 @@
                 Grid.Column="2"/>
 
         </Grid>
+        <Entry x:Name="txttotal"
+               Placeholder=""/>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition />

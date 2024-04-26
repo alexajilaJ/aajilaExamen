@@ -30,7 +30,7 @@ public partial class vLogin : ContentPage
         if (ValidateUser(username, password))
         {
             
-            var nextPage = new vRegistro();
+            var nextPage = new vRegistro(username);
             nextPage.Username = username;
             Navigation.PushAsync(nextPage);
         }
