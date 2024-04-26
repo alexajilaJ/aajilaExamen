@@ -80,7 +80,8 @@
             <Entry x:Name="txtPago"
                     Placeholder=""
                     Grid.Row="4"
-                    Grid.Column="1"/>
+                    Grid.Column="1"
+                   IsEnabled="False" />
         </Grid>
 
         <Grid>
