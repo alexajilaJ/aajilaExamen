@@ -15,7 +15,7 @@ public partial class vRegistro : ContentPage
     }
     private void btnResumen_Clicked(object sender, EventArgs e)
     {
- 
+        Navigation.PushAsync(new Vistas.vResumen());
     }
 
 }
